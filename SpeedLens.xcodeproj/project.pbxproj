@@ -13,6 +13,7 @@
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
 		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 		5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0121D2DC41B2F00C8799F /* AppRouter.swift */; };
+		5EE012242DC4220100C8799F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012232DC4220100C8799F /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
 		5EE0121D2DC41B2F00C8799F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		5EE012232DC4220100C8799F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -105,6 +107,7 @@
 		5E4734F52DC310DA002E33DE /* SpeedLens */ = {
 			isa = PBXGroup;
 			children = (
+				5EE012202DC41E8C00C8799F /* Modules */,
 				5E4734FA2DC310DD002E33DE /* App */,
 				5E4734FD2DC31105002E33DE /* Model */,
 				5E4734FC2DC310FA002E33DE /* Scenes */,
@@ -133,7 +136,8 @@
 		5E4734FC2DC310FA002E33DE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5E4734F22DC310DA002E33DE /* CameraView.swift */,
+				5EE012212DC421EB00C8799F /* Camera */,
+				5EE012222DC421F200C8799F /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -144,6 +148,29 @@
 				5E4734F32DC310DA002E33DE /* Item.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5EE012202DC41E8C00C8799F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5EE012212DC421EB00C8799F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734F22DC310DA002E33DE /* CameraView.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5EE012222DC421F200C8799F /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				5EE012232DC4220100C8799F /* DetailView.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +322,7 @@
 				5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */,
 				5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */,
 				5E4734F82DC310DA002E33DE /* Item.swift in Sources */,
+				5EE012242DC4220100C8799F /* DetailView.swift in Sources */,
 				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

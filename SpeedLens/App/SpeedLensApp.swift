@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct SpeedLensApp: App {
+	@StateObject private var router = NavigationRouter()
+
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -24,9 +26,20 @@ struct SpeedLensApp: App {
     }()
 
     var body: some Scene {
-        WindowGroup {
-			CameraView()
-        }
-        .modelContainer(sharedModelContainer)
+		WindowGroup {
+			NavigationStack(path: $router.path) {
+				CameraView()
+					.environmentObject(router)
+					.navigationDestination(for: AppRoute.self) { route in
+						switch route {
+						case .detail(let image):
+							DetailView(image: image)
+						default:
+							EmptyView()
+						}
+					}
+			}
+		}
+		.modelContainer(sharedModelContainer)
     }
 }

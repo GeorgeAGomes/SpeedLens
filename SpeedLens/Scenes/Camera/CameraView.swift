@@ -12,14 +12,7 @@ import CubeLoaderKit
 
 struct CameraView: View {
 	@State private var capturedImage: UIImage?
-
-	private let lutLoader = CubeLoader.shared
-	private var filters: [CIFilter] = []
-
-	init() {
-		lutLoader.loadLUTsFromBundle()
-		self.filters = lutLoader.LUTs.toFilter()
-	}
+	@EnvironmentObject private var router: NavigationRouter
 
 	var body: some View {
 		VStack {
@@ -37,6 +30,11 @@ struct CameraView: View {
 					.padding()
 					.background(Color.blue)
 					.cornerRadius(10)
+			}
+		}
+		.onChange(of: capturedImage) {
+			if let image = capturedImage {
+				router.go(to: .detail(image: image))
 			}
 		}
 	}

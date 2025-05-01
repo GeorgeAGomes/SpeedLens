@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-final class NavigationRouter: ObservableObject {
+enum AppRoute: Hashable {
+	case camera
+	case detail(image: UIImage)
+	case share
+	case subscribe
+	case ad
+}
 
-	enum AppRoute: Hashable {
-		case camera
-		case detail(image: UIImage)
-		case share
-		case subscribe
-		case ad
-	}
+final class NavigationRouter: ObservableObject {
 
 	@Published var path: [AppRoute] = []
 
