@@ -104,6 +104,7 @@
 				5E4734FA2DC310DD002E33DE /* App */,
 				5E4734FD2DC31105002E33DE /* Model */,
 				5E4734FC2DC310FA002E33DE /* Scenes */,
+				5E4734FB2DC310EC002E33DE /* Resources */,
 			);
 			path = SpeedLens;
 			sourceTree = "<group>";
@@ -128,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				5E4734F22DC310DA002E33DE /* ContentView.swift */,
-				5E4734FB2DC310EC002E33DE /* Resources */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
