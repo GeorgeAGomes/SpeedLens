@@ -13,7 +13,20 @@
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
 		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 		5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0121D2DC41B2F00C8799F /* AppRouter.swift */; };
-		5EE012242DC4220100C8799F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012232DC4220100C8799F /* DetailView.swift */; };
+		5EE012242DC4220100C8799F /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012232DC4220100C8799F /* DetailImageView.swift */; };
+		5EE012272DC424A100C8799F /* DetailImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012262DC424A100C8799F /* DetailImageFactory.swift */; };
+		5EE012292DC424C500C8799F /* DetailImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012282DC424C500C8799F /* DetailImageViewModel.swift */; };
+		5EE012362DC4283900C8799F /* Original.cube in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122F2DC4283900C8799F /* Original.cube */; };
+		5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012322DC4283900C8799F /* S-curve_for_CineStyle.cube */; };
+		5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012332DC4283900C8799F /* tealorange.CUBE */; };
+		5EE012392DC4283900C8799F /* customizado3.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122E2DC4283900C8799F /* customizado3.CUBE */; };
+		5EE0123A2DC4283900C8799F /* 64_myfilter.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */; };
+		5EE0123B2DC4283900C8799F /* teste.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012342DC4283900C8799F /* teste.CUBE */; };
+		5EE0123C2DC4283900C8799F /* 1dezinho.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */; };
+		5EE0123D2DC4283900C8799F /* customizado.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122C2DC4283900C8799F /* customizado.CUBE */; };
+		5EE0123E2DC4283900C8799F /* provia.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012302DC4283900C8799F /* provia.CUBE */; };
+		5EE0123F2DC4283900C8799F /* redish.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012312DC4283900C8799F /* redish.CUBE */; };
+		5EE012402DC4283900C8799F /* customizado2.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122D2DC4283900C8799F /* customizado2.CUBE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +55,20 @@
 		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
 		5EE0121D2DC41B2F00C8799F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
-		5EE012232DC4220100C8799F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5EE012232DC4220100C8799F /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
+		5EE012262DC424A100C8799F /* DetailImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageFactory.swift; sourceTree = "<group>"; };
+		5EE012282DC424C500C8799F /* DetailImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageViewModel.swift; sourceTree = "<group>"; };
+		5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1dezinho.CUBE; sourceTree = "<group>"; };
+		5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = 64_myfilter.CUBE; sourceTree = "<group>"; };
+		5EE0122C2DC4283900C8799F /* customizado.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado.CUBE; sourceTree = "<group>"; };
+		5EE0122D2DC4283900C8799F /* customizado2.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado2.CUBE; sourceTree = "<group>"; };
+		5EE0122E2DC4283900C8799F /* customizado3.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado3.CUBE; sourceTree = "<group>"; };
+		5EE0122F2DC4283900C8799F /* Original.cube */ = {isa = PBXFileReference; lastKnownFileType = text; path = Original.cube; sourceTree = "<group>"; };
+		5EE012302DC4283900C8799F /* provia.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = provia.CUBE; sourceTree = "<group>"; };
+		5EE012312DC4283900C8799F /* redish.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = redish.CUBE; sourceTree = "<group>"; };
+		5EE012322DC4283900C8799F /* S-curve_for_CineStyle.cube */ = {isa = PBXFileReference; lastKnownFileType = text; path = "S-curve_for_CineStyle.cube"; sourceTree = "<group>"; };
+		5EE012332DC4283900C8799F /* tealorange.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = tealorange.CUBE; sourceTree = "<group>"; };
+		5EE012342DC4283900C8799F /* teste.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = teste.CUBE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -129,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				5E4734F12DC310DA002E33DE /* Assets.xcassets */,
+				5EE012352DC4283900C8799F /* LUTS */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -153,6 +180,7 @@
 		5EE012202DC41E8C00C8799F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EE012252DC4248900C8799F /* Factory */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -168,9 +196,36 @@
 		5EE012222DC421F200C8799F /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				5EE012232DC4220100C8799F /* DetailView.swift */,
+				5EE012282DC424C500C8799F /* DetailImageViewModel.swift */,
+				5EE012232DC4220100C8799F /* DetailImageView.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		5EE012252DC4248900C8799F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				5EE012262DC424A100C8799F /* DetailImageFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		5EE012352DC4283900C8799F /* LUTS */ = {
+			isa = PBXGroup;
+			children = (
+				5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */,
+				5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */,
+				5EE0122C2DC4283900C8799F /* customizado.CUBE */,
+				5EE0122D2DC4283900C8799F /* customizado2.CUBE */,
+				5EE0122E2DC4283900C8799F /* customizado3.CUBE */,
+				5EE0122F2DC4283900C8799F /* Original.cube */,
+				5EE012302DC4283900C8799F /* provia.CUBE */,
+				5EE012312DC4283900C8799F /* redish.CUBE */,
+				5EE012322DC4283900C8799F /* S-curve_for_CineStyle.cube */,
+				5EE012332DC4283900C8799F /* tealorange.CUBE */,
+				5EE012342DC4283900C8799F /* teste.CUBE */,
+			);
+			path = LUTS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +349,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE012362DC4283900C8799F /* Original.cube in Resources */,
+				5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */,
+				5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */,
+				5EE012392DC4283900C8799F /* customizado3.CUBE in Resources */,
+				5EE0123A2DC4283900C8799F /* 64_myfilter.CUBE in Resources */,
+				5EE0123B2DC4283900C8799F /* teste.CUBE in Resources */,
+				5EE0123C2DC4283900C8799F /* 1dezinho.CUBE in Resources */,
+				5EE0123D2DC4283900C8799F /* customizado.CUBE in Resources */,
+				5EE0123E2DC4283900C8799F /* provia.CUBE in Resources */,
+				5EE0123F2DC4283900C8799F /* redish.CUBE in Resources */,
+				5EE012402DC4283900C8799F /* customizado2.CUBE in Resources */,
 				5E4734F62DC310DA002E33DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,10 +385,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE012292DC424C500C8799F /* DetailImageViewModel.swift in Sources */,
 				5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */,
 				5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */,
 				5E4734F82DC310DA002E33DE /* Item.swift in Sources */,
-				5EE012242DC4220100C8799F /* DetailView.swift in Sources */,
+				5EE012242DC4220100C8799F /* DetailImageView.swift in Sources */,
+				5EE012272DC424A100C8799F /* DetailImageFactory.swift in Sources */,
 				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

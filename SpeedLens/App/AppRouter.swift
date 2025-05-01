@@ -20,8 +20,9 @@ final class NavigationRouter: ObservableObject {
 	@Published var path: [AppRoute] = []
 
 	func go(to route: AppRoute) {
-		print("🚀 roteando para \(route)")
-		path.append(route)
+		withAnimation(.easeInOut) {
+			path.append(route)
+		}
 	}
 
 	func pop() {

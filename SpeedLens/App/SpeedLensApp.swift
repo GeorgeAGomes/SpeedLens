@@ -7,6 +7,8 @@
 
 import SwiftUI
 import SwiftData
+import CubeLoaderKit
+//import Nav
 
 @main
 struct SpeedLensApp: App {
@@ -26,19 +28,23 @@ struct SpeedLensApp: App {
     }()
 
     var body: some Scene {
-		WindowGroup {
-			NavigationStack(path: $router.path) {
-				CameraView()
-					.environmentObject(router)
-					.navigationDestination(for: AppRoute.self) { route in
-						switch route {
-						case .detail(let image):
-							DetailView(image: image)
-						default:
-							EmptyView()
-						}
-					}
-			}
+        		WindowGroup {
+        			NavigationStack(path: $router.path) {
+        				CameraView()
+        					.navigationDestination(for: AppRoute.self) { route in
+        						switch route {
+        						case .detail(let image):
+        							DetailImageViewFactory.make(with: image)
+        						default:
+        							EmptyView()
+        						}
+        					}
+        				}
+        			.environmentObject(router)
+        			.onAppear {
+        				let loader = CubeLoader.shared
+        				loader.loadLUTsFromBundle()
+        			}
 		}
 		.modelContainer(sharedModelContainer)
     }
