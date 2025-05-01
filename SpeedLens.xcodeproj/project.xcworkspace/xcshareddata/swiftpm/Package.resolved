@@ -1,0 +1,15 @@
+{
+  "originHash" : "6045e99fef6677631b6eb8b0b243716c64be72bce881aa55fffc6ab405d376de",
+  "pins" : [
+    {
+      "identity" : "cubeloaderkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GeorgeAGomes/CubeLoaderKit.git",
+      "state" : {
+        "revision" : "90bca6b6f18b810eca58d8ffe2ef6a5661eab300",
+        "version" : "0.1.0-beta.1"
+      }
+    }
+  ],
+  "version" : 3
+}

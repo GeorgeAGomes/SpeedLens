@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5E4734F62DC310DA002E33DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4734F12DC310DA002E33DE /* Assets.xcassets */; };
-		5E4734F72DC310DA002E33DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F22DC310DA002E33DE /* ContentView.swift */; };
+		5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F22DC310DA002E33DE /* CameraView.swift */; };
 		5E4734F82DC310DA002E33DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F32DC310DA002E33DE /* Item.swift */; };
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
+		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 		5E4734C02DC30F90002E33DE /* SpeedLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4734CA2DC30F90002E33DE /* SpeedLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4734F12DC310DA002E33DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E4734F22DC310DA002E33DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E4734F22DC310DA002E33DE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,7 +130,7 @@
 		5E4734FC2DC310FA002E33DE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5E4734F22DC310DA002E33DE /* ContentView.swift */,
+				5E4734F22DC310DA002E33DE /* CameraView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -158,6 +160,7 @@
 			);
 			name = SpeedLens;
 			packageProductDependencies = (
+				5EE012142DC3126D00C8799F /* CubeLoaderKit */,
 			);
 			productName = SpeedLens;
 			productReference = 5E4734B12DC30F8F002E33DE /* SpeedLens.app */;
@@ -241,6 +244,9 @@
 			);
 			mainGroup = 5E4734A82DC30F8F002E33DE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E4734B22DC30F8F002E33DE /* Products */;
 			projectDirPath = "";
@@ -283,7 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E4734F72DC310DA002E33DE /* ContentView.swift in Sources */,
+				5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */,
 				5E4734F82DC310DA002E33DE /* Item.swift in Sources */,
 				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
@@ -450,6 +456,8 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -478,6 +486,8 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -608,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GeorgeAGomes/CubeLoaderKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = "0.1.0-beta.1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EE012142DC3126D00C8799F /* CubeLoaderKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */;
+			productName = CubeLoaderKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E4734A92DC30F8F002E33DE /* Project object */;
 }
