@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E4734F62DC310DA002E33DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E4734F12DC310DA002E33DE /* Assets.xcassets */; };
+		5E4734F72DC310DA002E33DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F22DC310DA002E33DE /* ContentView.swift */; };
+		5E4734F82DC310DA002E33DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F32DC310DA002E33DE /* Item.swift */; };
+		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5E4734C12DC30F90002E33DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,14 +34,13 @@
 		5E4734B12DC30F8F002E33DE /* SpeedLens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4734C02DC30F90002E33DE /* SpeedLensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4734CA2DC30F90002E33DE /* SpeedLensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E4734F12DC310DA002E33DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E4734F22DC310DA002E33DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5E4734B32DC30F8F002E33DE /* SpeedLens */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SpeedLens;
-			sourceTree = "<group>";
-		};
 		5E4734C32DC30F90002E33DE /* SpeedLensTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SpeedLensTests;
@@ -75,7 +81,7 @@
 		5E4734A82DC30F8F002E33DE = {
 			isa = PBXGroup;
 			children = (
-				5E4734B32DC30F8F002E33DE /* SpeedLens */,
+				5E4734F52DC310DA002E33DE /* SpeedLens */,
 				5E4734C32DC30F90002E33DE /* SpeedLensTests */,
 				5E4734CD2DC30F90002E33DE /* SpeedLensUITests */,
 				5E4734B22DC30F8F002E33DE /* Products */,
@@ -92,6 +98,49 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5E4734F52DC310DA002E33DE /* SpeedLens */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734FA2DC310DD002E33DE /* App */,
+				5E4734FD2DC31105002E33DE /* Model */,
+				5E4734FC2DC310FA002E33DE /* Scenes */,
+			);
+			path = SpeedLens;
+			sourceTree = "<group>";
+		};
+		5E4734FA2DC310DD002E33DE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5E4734FB2DC310EC002E33DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734F12DC310DA002E33DE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5E4734FC2DC310FA002E33DE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734F22DC310DA002E33DE /* ContentView.swift */,
+				5E4734FB2DC310EC002E33DE /* Resources */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5E4734FD2DC31105002E33DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E4734F32DC310DA002E33DE /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +155,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				5E4734B32DC30F8F002E33DE /* SpeedLens */,
 			);
 			name = SpeedLens;
 			packageProductDependencies = (
@@ -212,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4734F62DC310DA002E33DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4734F72DC310DA002E33DE /* ContentView.swift in Sources */,
+				5E4734F82DC310DA002E33DE /* Item.swift in Sources */,
+				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
