@@ -11,10 +11,7 @@ import CoreImage
 import CubeLoaderKit
 
 struct CameraView: View {
-	@State private var isLUTEnabled = false
-	@State private var lutIntensity: Float = 1.0
 	@State private var capturedImage: UIImage?
-	@State private var currentFilterIndex = 0
 
 	private let lutLoader = CubeLoader.shared
 	private var filters: [CIFilter] = []
@@ -50,6 +47,9 @@ struct CameraPreview: UIViewControllerRepresentable {
 
 	func makeUIViewController(context: Context) -> CameraViewController {
 		let controller = CameraViewController()
+		controller.onCapture = { image in
+			capturedImage = image
+		}
 		return controller
 	}
 
@@ -64,11 +64,12 @@ class CameraViewController: UIViewController,
 							AVCapturePhotoCaptureDelegate {
 
 	private var previewLayer: AVCaptureVideoPreviewLayer!
-
 	private let ciContext = CIContext()
 	private var captureSession = AVCaptureSession()
 	private let photoOutput = AVCapturePhotoOutput()
 	private let previewImageView = UIImageView()
+
+	var onCapture: ((UIImage) -> Void)?
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -147,8 +148,7 @@ class CameraViewController: UIViewController,
 		ciImage = ciImage.oriented(.right)
 
 		let finalImage = convertCIImageToUIImage(ciImage)
-		// Save image on device
-		UIImageWriteToSavedPhotosAlbum(finalImage, nil, nil, nil)
+		onCapture?(finalImage)
 	}
 
 	private func convertCIImageToUIImage(_ ciImage: CIImage) -> UIImage {
