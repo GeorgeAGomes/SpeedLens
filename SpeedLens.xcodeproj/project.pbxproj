@@ -27,6 +27,8 @@
 		5EE0123E2DC4283900C8799F /* provia.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012302DC4283900C8799F /* provia.CUBE */; };
 		5EE0123F2DC4283900C8799F /* redish.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012312DC4283900C8799F /* redish.CUBE */; };
 		5EE012402DC4283900C8799F /* customizado2.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122D2DC4283900C8799F /* customizado2.CUBE */; };
+		5EE0125A2DC43C8F00C8799F /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012572DC43C8F00C8799F /* CameraPreview.swift */; };
+		5EE0125B2DC43C8F00C8799F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012582DC43C8F00C8799F /* CameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		5EE012322DC4283900C8799F /* S-curve_for_CineStyle.cube */ = {isa = PBXFileReference; lastKnownFileType = text; path = "S-curve_for_CineStyle.cube"; sourceTree = "<group>"; };
 		5EE012332DC4283900C8799F /* tealorange.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = tealorange.CUBE; sourceTree = "<group>"; };
 		5EE012342DC4283900C8799F /* teste.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = teste.CUBE; sourceTree = "<group>"; };
+		5EE012572DC43C8F00C8799F /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		5EE012582DC43C8F00C8799F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -180,6 +184,7 @@
 		5EE012202DC41E8C00C8799F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EE012592DC43C8F00C8799F /* Camera */,
 				5EE012252DC4248900C8799F /* Factory */,
 			);
 			path = Modules;
@@ -226,6 +231,15 @@
 				5EE012342DC4283900C8799F /* teste.CUBE */,
 			);
 			path = LUTS;
+			sourceTree = "<group>";
+		};
+		5EE012592DC43C8F00C8799F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5EE012572DC43C8F00C8799F /* CameraPreview.swift */,
+				5EE012582DC43C8F00C8799F /* CameraViewController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +405,8 @@
 				5E4734F82DC310DA002E33DE /* Item.swift in Sources */,
 				5EE012242DC4220100C8799F /* DetailImageView.swift in Sources */,
 				5EE012272DC424A100C8799F /* DetailImageFactory.swift in Sources */,
+				5EE0125A2DC43C8F00C8799F /* CameraPreview.swift in Sources */,
+				5EE0125B2DC43C8F00C8799F /* CameraViewController.swift in Sources */,
 				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
