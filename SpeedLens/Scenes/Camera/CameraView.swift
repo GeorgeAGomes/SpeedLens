@@ -8,11 +8,19 @@
 import SwiftUI
 import UIKit
 
-struct CameraView: View {
-	@State private var capturedImage: UIImage?
-	@EnvironmentObject private var router: NavigationRouter
+// MARK: - CameraView
+/// SwiftUI view displaying camera preview and capture button
 
-	var body: some View {
+struct CameraView: View {
+    // MARK: - Properties
+    /// Holds the latest captured image from the camera
+    @State private var capturedImage: UIImage?
+    /// Router for navigation between routes
+    @EnvironmentObject private var router: NavigationRouter
+
+    // MARK: - Body
+    /// The main view body displaying preview and capture control
+    var body: some View {
 		VStack {
 			CameraPreview(
 				capturedImage: $capturedImage
@@ -29,11 +37,13 @@ struct CameraView: View {
 					.background(Color.blue)
 					.cornerRadius(10)
 			}
-		}
-		.onChange(of: capturedImage) {
-			if let image = capturedImage {
-				router.go(to: .detail(image: image))
-			}
-		}
+        }
+        // MARK: - Actions
+        .onChange(of: capturedImage) {
+            // Navigate to detail view when an image is captured
+            if let image = capturedImage {
+                router.go(to: .detail(image: image))
+            }
+        }
 	}
 }
