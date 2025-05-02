@@ -29,6 +29,8 @@
 		5EE012402DC4283900C8799F /* customizado2.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122D2DC4283900C8799F /* customizado2.CUBE */; };
 		5EE0125A2DC43C8F00C8799F /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012572DC43C8F00C8799F /* CameraPreview.swift */; };
 		5EE0125B2DC43C8F00C8799F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012582DC43C8F00C8799F /* CameraViewController.swift */; };
+		5EE0125E2DC449B700C8799F /* SwipeFilterGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0125D2DC449B700C8799F /* SwipeFilterGesture.swift */; };
+		5EE012612DC449D500C8799F /* View+FilterSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012602DC449D500C8799F /* View+FilterSwipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		5EE012342DC4283900C8799F /* teste.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = teste.CUBE; sourceTree = "<group>"; };
 		5EE012572DC43C8F00C8799F /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		5EE012582DC43C8F00C8799F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5EE0125D2DC449B700C8799F /* SwipeFilterGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeFilterGesture.swift; sourceTree = "<group>"; };
+		5EE012602DC449D500C8799F /* View+FilterSwipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+FilterSwipe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -137,8 +141,9 @@
 		5E4734F52DC310DA002E33DE /* SpeedLens */ = {
 			isa = PBXGroup;
 			children = (
-				5EE012202DC41E8C00C8799F /* Modules */,
+				5EE0125F2DC449CB00C8799F /* Extensions */,
 				5E4734FA2DC310DD002E33DE /* App */,
+				5EE012202DC41E8C00C8799F /* Modules */,
 				5E4734FD2DC31105002E33DE /* Model */,
 				5E4734FC2DC310FA002E33DE /* Scenes */,
 				5E4734FB2DC310EC002E33DE /* Resources */,
@@ -184,6 +189,7 @@
 		5EE012202DC41E8C00C8799F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5EE0125C2DC4499400C8799F /* FilterSwipe */,
 				5EE012592DC43C8F00C8799F /* Camera */,
 				5EE012252DC4248900C8799F /* Factory */,
 			);
@@ -240,6 +246,22 @@
 				5EE012582DC43C8F00C8799F /* CameraViewController.swift */,
 			);
 			path = Camera;
+			sourceTree = "<group>";
+		};
+		5EE0125C2DC4499400C8799F /* FilterSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				5EE0125D2DC449B700C8799F /* SwipeFilterGesture.swift */,
+			);
+			path = FilterSwipe;
+			sourceTree = "<group>";
+		};
+		5EE0125F2DC449CB00C8799F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EE012602DC449D500C8799F /* View+FilterSwipe.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +429,8 @@
 				5EE012272DC424A100C8799F /* DetailImageFactory.swift in Sources */,
 				5EE0125A2DC43C8F00C8799F /* CameraPreview.swift in Sources */,
 				5EE0125B2DC43C8F00C8799F /* CameraViewController.swift in Sources */,
+				5EE0125E2DC449B700C8799F /* SwipeFilterGesture.swift in Sources */,
+				5EE012612DC449D500C8799F /* View+FilterSwipe.swift in Sources */,
 				5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,23 +29,12 @@ struct DetailImageView: View {
             .padding(.horizontal)
             // MARK: - Gesture
             /// Swipe left/right to change filters
-            .gesture(
-                DragGesture()
-                    .onEnded { value in
-                        if value.translation.width < -50 {
-                            // Next filter
-                            if viewModel.currentFilterIndex < viewModel.filters.count - 1 {
-                                viewModel.currentFilterIndex += 1
-                            }
-                        } else if value.translation.width > 50 {
-                            // Previous filter
-                            if viewModel.currentFilterIndex > 0 {
-                                viewModel.currentFilterIndex -= 1
-                            }
-                        }
-                        viewModel.updateFilter()
-                    }
-            )
+			.filterSwipe(
+				currentIndex: $viewModel.currentFilterIndex,
+				maxIndex: viewModel.filters.count - 1
+			) {
+				viewModel.updateFilter()
+			}
             // MARK: - Lifecycle
             .onAppear {
                 // Load available filters when view appears
