@@ -19,10 +19,7 @@
 		5EE012362DC4283900C8799F /* Original.cube in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122F2DC4283900C8799F /* Original.cube */; };
 		5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012322DC4283900C8799F /* S-curve_for_CineStyle.cube */; };
 		5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012332DC4283900C8799F /* tealorange.CUBE */; };
-		5EE012392DC4283900C8799F /* customizado3.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122E2DC4283900C8799F /* customizado3.CUBE */; };
-		5EE0123A2DC4283900C8799F /* 64_myfilter.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */; };
 		5EE0123B2DC4283900C8799F /* teste.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012342DC4283900C8799F /* teste.CUBE */; };
-		5EE0123C2DC4283900C8799F /* 1dezinho.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */; };
 		5EE0123D2DC4283900C8799F /* customizado.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE0122C2DC4283900C8799F /* customizado.CUBE */; };
 		5EE0123E2DC4283900C8799F /* provia.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012302DC4283900C8799F /* provia.CUBE */; };
 		5EE0123F2DC4283900C8799F /* redish.CUBE in Resources */ = {isa = PBXBuildFile; fileRef = 5EE012312DC4283900C8799F /* redish.CUBE */; };
@@ -31,6 +28,7 @@
 		5EE0125B2DC43C8F00C8799F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012582DC43C8F00C8799F /* CameraViewController.swift */; };
 		5EE0125E2DC449B700C8799F /* SwipeFilterGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0125D2DC449B700C8799F /* SwipeFilterGesture.swift */; };
 		5EE012612DC449D500C8799F /* View+FilterSwipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012602DC449D500C8799F /* View+FilterSwipe.swift */; };
+		5EE0127B2DC4A6AF00C8799F /* NavigationTransitions in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE0127A2DC4A6AF00C8799F /* NavigationTransitions */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,11 +60,8 @@
 		5EE012232DC4220100C8799F /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		5EE012262DC424A100C8799F /* DetailImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageFactory.swift; sourceTree = "<group>"; };
 		5EE012282DC424C500C8799F /* DetailImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageViewModel.swift; sourceTree = "<group>"; };
-		5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = 1dezinho.CUBE; sourceTree = "<group>"; };
-		5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = 64_myfilter.CUBE; sourceTree = "<group>"; };
 		5EE0122C2DC4283900C8799F /* customizado.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado.CUBE; sourceTree = "<group>"; };
 		5EE0122D2DC4283900C8799F /* customizado2.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado2.CUBE; sourceTree = "<group>"; };
-		5EE0122E2DC4283900C8799F /* customizado3.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = customizado3.CUBE; sourceTree = "<group>"; };
 		5EE0122F2DC4283900C8799F /* Original.cube */ = {isa = PBXFileReference; lastKnownFileType = text; path = Original.cube; sourceTree = "<group>"; };
 		5EE012302DC4283900C8799F /* provia.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = provia.CUBE; sourceTree = "<group>"; };
 		5EE012312DC4283900C8799F /* redish.CUBE */ = {isa = PBXFileReference; lastKnownFileType = text; path = redish.CUBE; sourceTree = "<group>"; };
@@ -98,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */,
+				5EE0127B2DC4A6AF00C8799F /* NavigationTransitions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,11 +220,8 @@
 		5EE012352DC4283900C8799F /* LUTS */ = {
 			isa = PBXGroup;
 			children = (
-				5EE0122A2DC4283900C8799F /* 1dezinho.CUBE */,
-				5EE0122B2DC4283900C8799F /* 64_myfilter.CUBE */,
 				5EE0122C2DC4283900C8799F /* customizado.CUBE */,
 				5EE0122D2DC4283900C8799F /* customizado2.CUBE */,
-				5EE0122E2DC4283900C8799F /* customizado3.CUBE */,
 				5EE0122F2DC4283900C8799F /* Original.cube */,
 				5EE012302DC4283900C8799F /* provia.CUBE */,
 				5EE012312DC4283900C8799F /* redish.CUBE */,
@@ -282,6 +275,7 @@
 			name = SpeedLens;
 			packageProductDependencies = (
 				5EE012142DC3126D00C8799F /* CubeLoaderKit */,
+				5EE0127A2DC4A6AF00C8799F /* NavigationTransitions */,
 			);
 			productName = SpeedLens;
 			productReference = 5E4734B12DC30F8F002E33DE /* SpeedLens.app */;
@@ -367,6 +361,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */,
+				5EE012792DC4A6AF00C8799F /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E4734B22DC30F8F002E33DE /* Products */;
@@ -388,10 +383,7 @@
 				5EE012362DC4283900C8799F /* Original.cube in Resources */,
 				5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */,
 				5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */,
-				5EE012392DC4283900C8799F /* customizado3.CUBE in Resources */,
-				5EE0123A2DC4283900C8799F /* 64_myfilter.CUBE in Resources */,
 				5EE0123B2DC4283900C8799F /* teste.CUBE in Resources */,
-				5EE0123C2DC4283900C8799F /* 1dezinho.CUBE in Resources */,
 				5EE0123D2DC4283900C8799F /* customizado.CUBE in Resources */,
 				5EE0123E2DC4283900C8799F /* provia.CUBE in Resources */,
 				5EE0123F2DC4283900C8799F /* redish.CUBE in Resources */,
@@ -596,6 +588,7 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -603,6 +596,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,6 +620,7 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -633,6 +628,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,6 +764,14 @@
 				version = "0.1.0-beta.1";
 			};
 		};
+		5EE012792DC4A6AF00C8799F /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davdroman/swiftui-navigation-transitions.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -775,6 +779,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */;
 			productName = CubeLoaderKit;
+		};
+		5EE0127A2DC4A6AF00C8799F /* NavigationTransitions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EE012792DC4A6AF00C8799F /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */;
+			productName = NavigationTransitions;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

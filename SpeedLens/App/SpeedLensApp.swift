@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import CubeLoaderKit
+import NavigationTransitions
 //import Nav
 
 // MARK: - SpeedLensApp
@@ -47,6 +48,9 @@ struct SpeedLensApp: App {
 						}
 					}
 			}
+			.navigationTransition(
+				.fade(.in).animation(.easeIn(duration: 0.5))
+			)
 			.environmentObject(router)
 			// Load LUT filters once on app launch
 			.onAppear {

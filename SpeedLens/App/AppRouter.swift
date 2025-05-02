@@ -33,9 +33,7 @@ final class NavigationRouter: ObservableObject {
     /// Pushes a new route onto the navigation stack
     /// - Parameter route: The destination route to navigate to
     func go(to route: AppRoute) {
-        withAnimation(.easeInOut) {
-            path.append(route)
-        }
+		path.append(route)
     }
 
     /// Pops the top route off the navigation stack
