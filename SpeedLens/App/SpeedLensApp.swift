@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 import CubeLoaderKit
 import NavigationTransitions
-//import Nav
+import ADManagerKit
 
 // MARK: - SpeedLensApp
 /// App entry point for SpeedLens, configuring persistence and navigation
@@ -33,6 +33,14 @@ struct SpeedLensApp: App {
 		}
 	}()
 
+	init() {
+		let loader = CubeLoader.shared
+		loader.loadLUTsFromBundle()
+
+		ADManagerKit()
+				.start(completionHandler: nil)
+	}
+
 	// MARK: - Scenes
 	/// Main application scene containing the camera view and navigation
 	var body: some Scene {
@@ -52,12 +60,6 @@ struct SpeedLensApp: App {
 				.fade(.in).animation(.easeIn(duration: 0.5))
 			)
 			.environmentObject(router)
-			// Load LUT filters once on app launch
-			.onAppear {
-				let loader = CubeLoader.shared
-				loader.loadLUTsFromBundle()
-			}
-
 		}
 	}
 }

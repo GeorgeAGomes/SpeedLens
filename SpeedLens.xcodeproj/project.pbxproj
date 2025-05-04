@@ -11,6 +11,8 @@
 		5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F22DC310DA002E33DE /* CameraView.swift */; };
 		5E4734F82DC310DA002E33DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F32DC310DA002E33DE /* Item.swift */; };
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
+		5E97D5C22DC5D0DF00707E3E /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D5C02DC5D0DF00707E3E /* config.xcconfig */; };
+		5E97D5C62DC5D6AF00707E3E /* ADManagerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97D5C52DC5D6AF00707E3E /* ADManagerKit */; };
 		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 		5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0121D2DC41B2F00C8799F /* AppRouter.swift */; };
 		5EE012242DC4220100C8799F /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012232DC4220100C8799F /* DetailImageView.swift */; };
@@ -56,6 +58,8 @@
 		5E4734F22DC310DA002E33DE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
+		5E97D5C02DC5D0DF00707E3E /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = "<group>"; };
+		5E97D5C32DC5D41600707E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5EE0121D2DC41B2F00C8799F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		5EE012232DC4220100C8799F /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
 		5EE012262DC424A100C8799F /* DetailImageFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageFactory.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E97D5C62DC5D6AF00707E3E /* ADManagerKit in Frameworks */,
 				5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */,
 				5EE0127B2DC4A6AF00C8799F /* NavigationTransitions in Frameworks */,
 			);
@@ -137,6 +142,7 @@
 		5E4734F52DC310DA002E33DE /* SpeedLens */ = {
 			isa = PBXGroup;
 			children = (
+				5E97D5C32DC5D41600707E3E /* Info.plist */,
 				5EE0125F2DC449CB00C8799F /* Extensions */,
 				5E4734FA2DC310DD002E33DE /* App */,
 				5EE012202DC41E8C00C8799F /* Modules */,
@@ -159,6 +165,7 @@
 		5E4734FB2DC310EC002E33DE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5E97D5C02DC5D0DF00707E3E /* config.xcconfig */,
 				5E4734F12DC310DA002E33DE /* Assets.xcassets */,
 				5EE012352DC4283900C8799F /* LUTS */,
 			);
@@ -276,6 +283,7 @@
 			packageProductDependencies = (
 				5EE012142DC3126D00C8799F /* CubeLoaderKit */,
 				5EE0127A2DC4A6AF00C8799F /* NavigationTransitions */,
+				5E97D5C52DC5D6AF00707E3E /* ADManagerKit */,
 			);
 			productName = SpeedLens;
 			productReference = 5E4734B12DC30F8F002E33DE /* SpeedLens.app */;
@@ -362,6 +370,7 @@
 			packageReferences = (
 				5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */,
 				5EE012792DC4A6AF00C8799F /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */,
+				5E97D5C42DC5D6AF00707E3E /* XCLocalSwiftPackageReference "../ADManagerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E4734B22DC30F8F002E33DE /* Products */;
@@ -380,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E97D5C22DC5D0DF00707E3E /* config.xcconfig in Resources */,
 				5EE012362DC4283900C8799F /* Original.cube in Resources */,
 				5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */,
 				5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */,
@@ -459,6 +469,7 @@
 /* Begin XCBuildConfiguration section */
 		5E4734D22DC30F90002E33DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E97D5C02DC5D0DF00707E3E /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -523,6 +534,7 @@
 		};
 		5E4734D32DC30F90002E33DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E97D5C02DC5D0DF00707E3E /* config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -588,6 +600,7 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedLens/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
@@ -620,6 +633,7 @@
 				DEVELOPMENT_TEAM = J8JPD2534R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpeedLens/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
 				INFOPLIST_KEY_NSCameraUsageDescription = "posso tirar?";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "posso salvar?";
@@ -755,6 +769,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		5E97D5C42DC5D6AF00707E3E /* XCLocalSwiftPackageReference "../ADManagerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ADManagerKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -775,6 +796,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5E97D5C52DC5D6AF00707E3E /* ADManagerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ADManagerKit;
+		};
 		5EE012142DC3126D00C8799F /* CubeLoaderKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */;
