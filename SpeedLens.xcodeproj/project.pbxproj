@@ -11,6 +11,7 @@
 		5E4734F72DC310DA002E33DE /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F22DC310DA002E33DE /* CameraView.swift */; };
 		5E4734F82DC310DA002E33DE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F32DC310DA002E33DE /* Item.swift */; };
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
+		5E71431A2DC9A2C300688A48 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5E7143192DC9A2C300688A48 /* config.xcconfig */; };
 		5E97D5C62DC5D6AF00707E3E /* ADManagerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97D5C52DC5D6AF00707E3E /* ADManagerKit */; };
 		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 		5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0121D2DC41B2F00C8799F /* AppRouter.swift */; };
@@ -57,6 +58,7 @@
 		5E4734F22DC310DA002E33DE /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		5E4734F32DC310DA002E33DE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedLensApp.swift; sourceTree = "<group>"; };
+		5E7143192DC9A2C300688A48 /* config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = config.xcconfig; sourceTree = SOURCE_ROOT; };
 		5E97D5C32DC5D41600707E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5EE0121D2DC41B2F00C8799F /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		5EE012232DC4220100C8799F /* DetailImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageView.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 		5E4734FB2DC310EC002E33DE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5E7143192DC9A2C300688A48 /* config.xcconfig */,
 				5E4734F12DC310DA002E33DE /* Assets.xcassets */,
 				5EE012352DC4283900C8799F /* LUTS */,
 			);
@@ -386,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E71431A2DC9A2C300688A48 /* config.xcconfig in Resources */,
 				5EE012362DC4283900C8799F /* Original.cube in Resources */,
 				5EE012372DC4283900C8799F /* S-curve_for_CineStyle.cube in Resources */,
 				5EE012382DC4283900C8799F /* tealorange.CUBE in Resources */,
