@@ -13,6 +13,7 @@
 		5E4734F92DC310DA002E33DE /* SpeedLensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4734F42DC310DA002E33DE /* SpeedLensApp.swift */; };
 		5E71431A2DC9A2C300688A48 /* config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5E7143192DC9A2C300688A48 /* config.xcconfig */; };
 		5E97D5C62DC5D6AF00707E3E /* ADManagerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5E97D5C52DC5D6AF00707E3E /* ADManagerKit */; };
+		5EDC44A72DC9AE5E00FCDC9C /* ADManagerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EDC44A62DC9AE5E00FCDC9C /* ADManagerKit */; };
 		5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5EE012142DC3126D00C8799F /* CubeLoaderKit */; };
 		5EE0121E2DC41B2F00C8799F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE0121D2DC41B2F00C8799F /* AppRouter.swift */; };
 		5EE012242DC4220100C8799F /* DetailImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE012232DC4220100C8799F /* DetailImageView.swift */; };
@@ -96,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EDC44A72DC9AE5E00FCDC9C /* ADManagerKit in Frameworks */,
 				5E97D5C62DC5D6AF00707E3E /* ADManagerKit in Frameworks */,
 				5EE012152DC3126D00C8799F /* CubeLoaderKit in Frameworks */,
 				5EE0127B2DC4A6AF00C8799F /* NavigationTransitions in Frameworks */,
@@ -284,6 +286,7 @@
 				5EE012142DC3126D00C8799F /* CubeLoaderKit */,
 				5EE0127A2DC4A6AF00C8799F /* NavigationTransitions */,
 				5E97D5C52DC5D6AF00707E3E /* ADManagerKit */,
+				5EDC44A62DC9AE5E00FCDC9C /* ADManagerKit */,
 			);
 			productName = SpeedLens;
 			productReference = 5E4734B12DC30F8F002E33DE /* SpeedLens.app */;
@@ -370,7 +373,7 @@
 			packageReferences = (
 				5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */,
 				5EE012792DC4A6AF00C8799F /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */,
-				5E97D5C42DC5D6AF00707E3E /* XCLocalSwiftPackageReference "../ADManagerKit" */,
+				5EDC44A52DC9AE5E00FCDC9C /* XCRemoteSwiftPackageReference "ADManagerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E4734B22DC30F8F002E33DE /* Products */;
@@ -769,14 +772,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		5E97D5C42DC5D6AF00707E3E /* XCLocalSwiftPackageReference "../ADManagerKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../ADManagerKit;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		5EDC44A52DC9AE5E00FCDC9C /* XCRemoteSwiftPackageReference "ADManagerKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GeorgeAGomes/ADManagerKit";
+			requirement = {
+				kind = exactVersion;
+				version = "0.1.0-beta.1";
+			};
+		};
 		5EE012132DC3126D00C8799F /* XCRemoteSwiftPackageReference "CubeLoaderKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/GeorgeAGomes/CubeLoaderKit.git";
@@ -798,6 +802,11 @@
 /* Begin XCSwiftPackageProductDependency section */
 		5E97D5C52DC5D6AF00707E3E /* ADManagerKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = ADManagerKit;
+		};
+		5EDC44A62DC9AE5E00FCDC9C /* ADManagerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EDC44A52DC9AE5E00FCDC9C /* XCRemoteSwiftPackageReference "ADManagerKit" */;
 			productName = ADManagerKit;
 		};
 		5EE012142DC3126D00C8799F /* CubeLoaderKit */ = {

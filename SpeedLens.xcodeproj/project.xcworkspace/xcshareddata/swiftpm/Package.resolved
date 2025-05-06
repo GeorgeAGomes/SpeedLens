@@ -1,6 +1,15 @@
 {
-  "originHash" : "5ca5ad687acfb841003988e790f3b632f59e048fc0cc84fd11fed6209813c641",
+  "originHash" : "5497ef002f3c9887c2aea6d1a321b96100f27f903ec6cfb9e0f58622e4b46f2f",
   "pins" : [
+    {
+      "identity" : "admanagerkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GeorgeAGomes/ADManagerKit",
+      "state" : {
+        "revision" : "d16dce536fc1e7885cd35a8fc6503c2f9b3de523",
+        "version" : "0.1.0-beta.1"
+      }
+    },
     {
       "identity" : "cubeloaderkit",
       "kind" : "remoteSourceControl",
